@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   font-family: Inter ,system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-image: url("src/assets/img/bg-cafe.jpg");
+  background-image: url("/src/assets/img/bg-cafe.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color-scheme: light dark;
