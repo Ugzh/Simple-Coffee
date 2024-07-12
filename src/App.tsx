@@ -1,4 +1,5 @@
 import Cards from "./components/Cards.tsx";
+import VectorLine from "./assets/img/vector.svg";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
             batches and shipped fresh weekly
           </p>
           <img
-            src="src/assets/img/vector.svg"
+            src={VectorLine}
             alt="Vector design"
             className="absolute left-1/2 top-6 h-1/2 z-0 max-[640px]:hidden"
           />

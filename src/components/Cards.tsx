@@ -1,4 +1,6 @@
 import React from "react";
+import Star from "/src/assets/img/Star.svg";
+import StarFill from "/src/assets/img/Star_fill.svg";
 
 const ENDPOINT: string =
   "https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json";
@@ -38,7 +40,7 @@ function Cards() {
               <div className="flex justify-between pt-2">
                 {rating ? (
                   <div className="flex">
-                    <img src="src/assets/img/Star_fill.svg" alt={rating} />
+                    <img src={StarFill} alt={rating} />
                     <p>{rating}</p>
                     <span className="text-[#6F757C] font-semibold pl-1">
                       ({votes} votes)
@@ -46,7 +48,7 @@ function Cards() {
                   </div>
                 ) : (
                   <div className="flex">
-                    <img src="src/assets/img/Star.svg" alt={rating} />
+                    <img src={Star} alt={rating} />
                     <p className="text-[#6F757C] font-semibold">No rating</p>
                   </div>
                 )}
